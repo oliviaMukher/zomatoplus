@@ -29,7 +29,7 @@ public class UserController {
 		return persistedUser;
 	}
 	
-	@PostMapping("/getAll")
+	@GetMapping("/getAll")
 	public List<User> getAll()
 	{
 		List<User> listofusers=userRepository.findAll();

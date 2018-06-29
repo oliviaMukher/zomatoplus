@@ -30,7 +30,7 @@ public class RestaurantController {
 		return persistedRest;
 	}
 	
-	@PostMapping("/getAll")
+	@GetMapping("/getAll")
 	public List<Restaurant> getAll()
 	{
 		List<Restaurant> listofrests=restRepository.findAll();
